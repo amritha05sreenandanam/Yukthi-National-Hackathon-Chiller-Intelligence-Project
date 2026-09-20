@@ -1,0 +1,6 @@
+{
+  "name": "Operational Anomaly Detection & Prediction",
+  "description": "Production-grade contextual anomaly detection and energy efficiency monitoring for industrial chillers (Yukthi ChillerGuard AI).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

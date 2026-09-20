@@ -1,0 +1,104 @@
+{
+  "trained_at": "2026-09-20T18:26:06.547850Z",
+  "dataset_path": "data/operational_chiller_telemetry.csv",
+  "total_training_samples": 1200,
+  "train_samples": 960,
+  "test_samples": 240,
+  "contamination": 0.075,
+  "anomalies_detected_total": 99,
+  "anomaly_rate_pct": 8.25,
+  "target_col": "power_consumption_kw",
+  "feature_cols": [
+    "cooling_load_tons",
+    "chilled_water_supply_temp_c",
+    "chilled_water_return_temp_c",
+    "chilled_water_flow_rate_gpm",
+    "outdoor_ambient_temp_c",
+    "outdoor_humidity_pct",
+    "condenser_water_temp_c",
+    "condenser_pressure_kpa"
+  ],
+  "regression_metrics": {
+    "test_mae": 12.907,
+    "test_rmse": 24.56,
+    "test_r2": 0.8879,
+    "full_mae": 13.469,
+    "full_rmse": 25.664,
+    "full_r2": 0.8726,
+    "intercept": 244.415
+  },
+  "feature_coefficients": [
+    {
+      "feature": "cooling_load_tons",
+      "label": "Cooling Load",
+      "unit": "Tons",
+      "coefficient_scaled": 65.6623,
+      "unscaled_weight": 0.6359,
+      "mean": 399.45,
+      "std": 103.26
+    },
+    {
+      "feature": "condenser_water_temp_c",
+      "label": "Condenser Water Temp",
+      "unit": "\u00b0C",
+      "coefficient_scaled": 31.4653,
+      "unscaled_weight": 17.5839,
+      "mean": 33.25,
+      "std": 1.79
+    },
+    {
+      "feature": "condenser_pressure_kpa",
+      "label": "Condenser Pressure",
+      "unit": "kPa",
+      "coefficient_scaled": -17.9862,
+      "unscaled_weight": -0.3591,
+      "mean": 1033.28,
+      "std": 50.09
+    },
+    {
+      "feature": "outdoor_ambient_temp_c",
+      "label": "Outdoor Ambient Temp",
+      "unit": "\u00b0C",
+      "coefficient_scaled": -15.1006,
+      "unscaled_weight": -2.6275,
+      "mean": 22.11,
+      "std": 5.75
+    },
+    {
+      "feature": "outdoor_humidity_pct",
+      "label": "Outdoor Humidity",
+      "unit": "%",
+      "coefficient_scaled": -4.8989,
+      "unscaled_weight": -0.3335,
+      "mean": 65.54,
+      "std": 14.69
+    },
+    {
+      "feature": "chilled_water_flow_rate_gpm",
+      "label": "Chilled Water Flow Rate",
+      "unit": "GPM",
+      "coefficient_scaled": -2.9703,
+      "unscaled_weight": -0.0116,
+      "mean": 951.03,
+      "std": 255.99
+    },
+    {
+      "feature": "chilled_water_return_temp_c",
+      "label": "Chilled Water Return Temp",
+      "unit": "\u00b0C",
+      "coefficient_scaled": -1.8476,
+      "unscaled_weight": -1.5088,
+      "mean": 12.44,
+      "std": 1.22
+    },
+    {
+      "feature": "chilled_water_supply_temp_c",
+      "label": "Chilled Water Supply Temp",
+      "unit": "\u00b0C",
+      "coefficient_scaled": 1.1548,
+      "unscaled_weight": 2.5422,
+      "mean": 6.67,
+      "std": 0.45
+    }
+  ]
+}
